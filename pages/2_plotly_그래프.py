@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 # 인증키와 파라미터
 key = 'sr459ziApoSMy4hv1yD3Mw=='
-td_busan = 'DT_0005'
+td_busan = 'DT_0056'
 ob_busan = 'TW_0086'
 
 
