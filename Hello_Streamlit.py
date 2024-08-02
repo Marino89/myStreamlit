@@ -54,4 +54,4 @@ st.markdown(
 """
 )
 
-st.image("./img/img_github.png", caption=" ")
+st.image("./img/img_github.png", width=100, caption=" ")
