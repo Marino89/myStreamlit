@@ -17,7 +17,7 @@ st.set_page_config(
 st.write("# Streamlit 맛보기 😋")
 
 style_image1 = """
-width: 100%;
+width: 50%;
 max-width: 900px;
 height: auto;
 max-height: 800px;
@@ -26,7 +26,7 @@ justify-content: center;
 """
 
 st.markdown(
-    f'<img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" style="{style_image1}">',
+    f'<div><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" style="{style_image1}"></div><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}" style="{style_image1}"></div></div>',
     unsafe_allow_html=True,
 )
 
