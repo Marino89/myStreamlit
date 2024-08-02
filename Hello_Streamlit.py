@@ -18,15 +18,11 @@ st.write("# Streamlit 맛보기 😋")
 
 style_image1 = """
 width: 40%;
-max-width: 900px;
-height: auto;
-max-height: 800px;
-justify-content: center;
-display:inline;
+display:inline-block;
 """
 
 st.markdown(
-    f'<div><div style="{"display:inline-block;"}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" style="{style_image1}"></div><div style="{"display:inline-block;"}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}" style="{style_image1}"></div></div>',
+    f'<div><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" ></div><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}"></div></div>',
     unsafe_allow_html=True,
 )
 
