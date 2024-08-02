@@ -8,6 +8,7 @@ import streamlit as st
 import plotly.express as px
 from datetime import datetime, timedelta
 
+
 st.set_page_config(
     page_title="Hello",
     page_icon=":wave:",
@@ -15,8 +16,20 @@ st.set_page_config(
 
 st.write("# Streamlit 맛보기 😋")
 
-image_bundle = ['./pages/img/img_matplotlib.png', './pages/img/img_plotly.png']
-st.image(image_bundle, width=100, caption=" ")
+style_image1 = """
+width: 100%;
+max-width: 900px;
+height: auto;
+max-height: 800px;
+display: block;
+justify-content: center;
+"""
+
+st.markdown(
+    f'<div><div style="width:50%;"><img src="{"./pages/img/img_matplotlib.png"}" style="{style_image1}"></div><div style="width:50%;"><img src="{"./pages/img/img_matplotlib.png"}" style="{style_image1}"></div></div>',
+    unsafe_allow_html=True,
+)
+
 st.markdown(
     """
     Streamlit이란 python만으로 웹 어플리케이션을 구성할 수 있는 python 패키지로써, 웹 어플리케이션, 대시보드의 프로토타입을 개발하기에 적합함
@@ -28,9 +41,9 @@ st.markdown(
     pip install streamlit
     ```
     ```
-    stream hello
+    streamlit hello
     ```
-    
+
     ### Git, GitHub 활용하여 배포하기
     - Streamlit을 활용하여 만든 웹 어플리케이션을 Git, GitHub를 통해 배포 가능
     ```
