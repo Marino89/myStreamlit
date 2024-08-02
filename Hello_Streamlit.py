@@ -26,7 +26,7 @@ justify-content: center;
 """
 
 st.markdown(
-    f'<div><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" style="{style_image1}"></div><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}" style="{style_image1}"></div></div>',
+    f'<div style="{"display:inline-block;"}"><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" style="{style_image1}"></div><div><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}" style="{style_image1}"></div></div>',
     unsafe_allow_html=True,
 )
 
