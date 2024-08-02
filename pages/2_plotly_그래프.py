@@ -5,7 +5,7 @@
 import urllib.request
 import json
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 import streamlit as st
 import plotly.express as px
@@ -147,4 +147,4 @@ with tab1:
 with tab2:
     st.plotly_chart(fig2, theme=None)
 
-st.button("Re-run")
+# st.button("Re-run")
