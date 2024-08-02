@@ -15,15 +15,14 @@ st.set_page_config(
 
 st.write("# Streamlit 맛보기 😋")
 
-# st.sidebar.success("Streamlit ?���?")
-
-st.image("./pages/img/img_matplotlib.png", caption=" ")
+image_bundle = ['./pages/img/img_matplotlib.png', './pages/img/img_plotly.png']
+st.image(image_bundle, width=100, caption=" ")
 st.markdown(
     """
     Streamlit이란 python만으로 웹 어플리케이션을 구성할 수 있는 python 패키지로써, 웹 어플리케이션, 대시보드의 프로토타입을 개발하기에 적합함
-    
-    "![foo](https://www.google.com/imgres?q=matplotlib&imgurl=https%3A%2F%2Fwww.jumpingrivers.com%2Fblog%2Fcustomising-matplotlib%2Fmatplot_title_logo.png&imgrefurl=https%3A%2F%2Fwww.jumpingrivers.com%2Fblog%2Fcustomising-matplotlib%2F&docid=_v9yiDQDVpDv5M&tbnid=xfxE4lTw_4YraM&vet=12ahUKEwj36t6Y3tWHAxXDQPUHHdVVBAsQM3oECCsQAA..i&w=600&h=200&hcb=2&ved=2ahUKEwj36t6Y3tWHAxXDQPUHHdVVBAsQM3oECCsQAA)"
     - matpoltlib, plotly와 같은 다양한 데이터 시각화 패키지와 호환을 지원
+    
+    ### 설치
     - anaconda, venv 환경에서 아래와 같이 간단한 커맨드로 설치 가능
     ```
     pip install streamlit
@@ -31,6 +30,7 @@ st.markdown(
     ```
     stream hello
     ```
+    
     ### Git, GitHub 활용하여 배포하기
     - Streamlit을 활용하여 만든 웹 어플리케이션을 Git, GitHub를 통해 배포 가능
     ```
@@ -45,5 +45,4 @@ st.markdown(
 """
 )
 
-# if __name__=='__main__':
-#     test_app()
+st.image("./pages/img/img_github.png", caption=" ")
