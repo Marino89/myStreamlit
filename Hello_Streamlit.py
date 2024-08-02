@@ -17,12 +17,13 @@ st.set_page_config(
 st.write("# Streamlit 맛보기 😋")
 
 style_image1 = """
-width: 50%;
+width: 40%;
 max-width: 900px;
 height: auto;
 max-height: 800px;
 display: block;
 justify-content: center;
+display:inline;
 """
 
 st.markdown(
