@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 # 인증키와 파라미터
 key = 'sr459ziApoSMy4hv1yD3Mw=='
-td_busan = 'DT_0002'
+td_busan = 'DT_0005'
 ob_busan = 'TW_0086'
 
 
@@ -92,7 +92,7 @@ st.write(
 fig1 = px.line(td_df, x='일시', y="실측조위(cm)")
 fig2 = px.line(ob_df, x='일시', y="수온(\u00B0C)")
 
-tab1, tab2 = st.tabs(["부산 조위", "부산 수온"])
+tab1, tab2 = st.tabs(["조위", "수온"])
 with tab1:
     st.plotly_chart(fig1, theme="streamlit")
 with tab2:
