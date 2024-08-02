@@ -17,12 +17,12 @@ st.set_page_config(
 st.write("# Streamlit 맛보기 😋")
 
 style_image1 = """
-width: 40%;
+width: 30%;
 display:inline-block;
 """
 
 st.markdown(
-    f'<div style="margin:2rem 0 2rem 0;"><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" ></div><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}"></div></div>',
+    f'<div style="margin:2rem 0 2rem 0;"><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_matplotlib.png?raw=true"}" ></div><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_plotly.png?raw=true"}"></div><div style="{style_image1}"><img src="{"https://github.com/Marino89/myStreamlit/blob/main/img/img_pandas.png?raw=true"}"></div></div>',
     unsafe_allow_html=True,
 )
 
