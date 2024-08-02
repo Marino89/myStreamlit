@@ -12,8 +12,8 @@ from datetime import datetime, timedelta
 
 # 인증키와 파라미터
 key = 'sr459ziApoSMy4hv1yD3Mw=='
-td_busan = 'DT_0056'
-ob_busan = 'TW_0086'
+td_busan = 'DT_0005' # 부산항신항, 부산 DT_0005
+#ob_busan = 'TW_0086'
 
 
 # 조위관측소 실측 & 예측 (날짜검색 기준 1시간 간격)
@@ -46,6 +46,7 @@ def get_data(url):
             # now = datetime.now()-i
             # str_date = now.strftime('%Y%m%d'))
             str_date = datetime.strftime(datetime.now() - timedelta(i), '%Y%m%d')
+            # 조위관측소 1분 단위 1일 자료
             url = f'http://www.khoa.go.kr/api/oceangrid/tideObsTemp/search.do?ServiceKey={key}&ObsCode={td_busan}&Date={str_date}&ResultType=json'
 
             # 데이터 가져오기
