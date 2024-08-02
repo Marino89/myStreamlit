@@ -21,7 +21,6 @@ width: 40%;
 max-width: 900px;
 height: auto;
 max-height: 800px;
-display: block;
 justify-content: center;
 display:inline;
 """
