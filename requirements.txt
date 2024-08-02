@@ -1,0 +1,7 @@
+urllib.request
+json
+pandas
+scipy.signal
+streamlit
+plotly.express
+datetime
