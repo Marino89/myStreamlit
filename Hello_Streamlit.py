@@ -26,7 +26,7 @@ justify-content: center;
 """
 
 st.markdown(
-    f'<img src="{".img/img_matplotlib.png"}" style="{style_image1}">',
+    f'<img src="{"./img/img_matplotlib.png"}" style="{style_image1}">',
     unsafe_allow_html=True,
 )
 
