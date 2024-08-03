@@ -7,10 +7,7 @@ from scipy.signal import savgol_filter
 import streamlit as st
 import plotly.express as px
 from datetime import datetime, timedelta
-from streamlit_autorefresh import st_autorefresh
 
-# update every 5 mins
-st_autorefresh(interval=5 * 60 * 1000, key="dataframerefresh")
 
 st.set_page_config(
     page_title="Hello",

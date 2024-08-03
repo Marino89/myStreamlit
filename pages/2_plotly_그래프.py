@@ -11,8 +11,6 @@ import plotly.express as px
 from datetime import datetime, timedelta
 from streamlit_autorefresh import st_autorefresh
 
-# update every 5 mins
-st_autorefresh(interval=5 * 60 * 1000, key="dataframerefresh")
 
 # 인증키와 파라미터
 key = 'sr459ziApoSMy4hv1yD3Mw=='
@@ -22,6 +20,9 @@ td_busan = 'DT_0005' # 부산항신항, 부산 DT_0005
 
 # 조위관측소 실측 & 예측 (날짜검색 기준 1시간 간격)
 st.set_page_config(page_title="부산의 실시간 조위 및 수온", page_icon="📈")
+
+# update every 5 mins
+st_autorefresh(interval=5 * 60 * 1000, key="dataframerefresh")
 
 @st.cache_data
 def get_data(url):
